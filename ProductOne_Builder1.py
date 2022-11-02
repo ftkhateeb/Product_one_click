@@ -26,7 +26,7 @@ class PushButton:
 
     #function that contains the whole command that will be executed when we click the button 
     def myClick(self):
-        os.system('cd {} && {}'.format(self.directory, self.command))
+        os.system('cd {} && start "" {}'.format(self.directory, self.command))
     
     #Create new Tkinter button in the gui
     def TkinterButonInit(self):
